@@ -1,3 +1,9 @@
+import subprocess
+result = subprocess.run(["pip", "show", "joblib"], capture_output=True, text=True)
+print(result.stdout)
+
+
+
 import streamlit as st
 import joblib
 import plotly.graph_objects as go
